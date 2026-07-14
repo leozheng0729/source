@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filter YouTube Video - Block YouTube Keywords, Channels and Shorts</title>
+    <meta
+      name="description"
+      content="Filter YouTube Video is a Chrome extension that helps you block unwanted YouTube videos by title keywords, channel names, Shorts and distracting recommendations. Private, local and easy to use." />
+    <meta
+      name="keywords"
+      content="filter YouTube videos by keyword, block YouTube channels, hide YouTube Shorts, YouTube keyword filter extension, Chrome extension for YouTube filtering, remove YouTube ads, YouTube productivity extension" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#ff2d2f" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Filter YouTube Video - Clean up your YouTube feed" />
+    <meta
+      property="og:description"
+      content="Block YouTube videos by keywords and channels, hide Shorts, reduce distractions and keep your rules local in your browser." />
+    <meta property="og:image" content="./images/marquee-1400x560.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Filter YouTube Video" />
+    <meta
+      name="twitter:description"
+      content="A Chrome extension for keyword filtering, channel filtering and cleaner YouTube browsing." />
+    <meta name="twitter:image" content="./images/marquee-1400x560.png" />
+    <link rel="icon" href="./images/logo.png" />
+    <link rel="preload" as="image" href="./images/logo.png" />
+    <link rel="preload" as="image" href="./images/screenshot-1-1280x800.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Filter YouTube Video",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome, ChromeOS, Windows, macOS, Linux",
+        "description": "A Chrome extension that filters YouTube videos by keywords and channel names, hides Shorts, removes distractions and stores rules locally.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "featureList": [
+          "Filter YouTube videos by title keyword",
+          "Block unwanted YouTube channels",
+          "Hide YouTube Shorts",
+          "Use custom rule presets",
+          "Private local browser storage"
+        ],
+        "downloadUrl": "https://chromewebstore.google.com/detail/filter-youtube-video/mgfegjcpcmgehngcdaiomljenckdnenc"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can I block YouTube videos by keyword?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Filter YouTube Video lets you add title keywords and filter matching videos from YouTube pages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I block YouTube channels?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. You can filter channels by name so videos from unwanted channels stop appearing in your feed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the extension hide YouTube Shorts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The extension includes an option to hide Shorts so the YouTube experience feels more focused."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are my filtering rules private?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Filtering rules are stored locally in your browser. The extension is designed for private, local filtering."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="Filter YouTube Video home">
+        <img src="./images/logo.png" alt="Filter YouTube Video logo" />
+        <span>Filter YouTube Video</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#steps">How it works</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a
+        class="install-button install-button-small"
+        href="https://chromewebstore.google.com/detail/filter-youtube-video/mgfegjcpcmgehngcdaiomljenckdnenc"
+        target="_blank"
+        rel="noopener noreferrer">
+        安装到Chrome
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Chrome extension for a cleaner YouTube feed</p>
+          <h1>Filter YouTube videos by keywords, channels and Shorts.</h1>
+          <p class="hero-text">
+            Stop unwanted recommendations before they pull attention away. Add a keyword,
+            block a noisy channel, hide Shorts and keep YouTube useful for study, work,
+            parenting and focused browsing.
+          </p>
+          <div class="hero-actions">
+            <a
+              class="install-button"
+              href="https://chromewebstore.google.com/detail/filter-youtube-video/mgfegjcpcmgehngcdaiomljenckdnenc"
+              target="_blank"
+              rel="noopener noreferrer">
+              安装到Chrome
+            </a>
+            <a class="secondary-link" href="#steps">See how it works</a>
+          </div>
+          <div class="trust-row" aria-label="Product highlights">
+            <span>Private local rules</span>
+            <span>No YouTube login required</span>
+            <span>Free trial included</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div class="browser-frame" aria-label="Filter YouTube Video product preview">
+            <div class="browser-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>youtube.com</strong>
+            </div>
+            <img
+              src="./images/screenshot-1-1280x800.png"
+              alt="Before and after YouTube feed filtering preview" />
+            <div class="floating-card floating-card-top">
+              <strong>Blocked</strong>
+              <span>12 distracting videos</span>
+            </div>
+            <div class="floating-card floating-card-bottom">
+              <strong>Active filters</strong>
+              <span>Keywords + channels + Shorts</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Common YouTube cleanup use cases">
+        <span>Block clickbait topics</span>
+        <span>Filter channels you do not want</span>
+        <span>Hide Shorts</span>
+        <span>Protect focus time</span>
+      </section>
+
+      <section id="features" class="section-shell feature-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Built for YouTube filtering</p>
+          <h2>A practical toolkit for removing unwanted videos.</h2>
+          <p>
+            Instead of fighting YouTube one recommendation at a time, create clear rules
+            that keep your homepage, search results and side recommendations cleaner.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">K</span>
+            <h3>Keyword video filtering</h3>
+            <p>Hide videos when their titles match topics, words, phrases or distractions you want out of sight.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">C</span>
+            <h3>Channel filtering</h3>
+            <p>Block videos from channels that keep returning to your feed, even when YouTube will not let you fully block them.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">S</span>
+            <h3>Hide YouTube Shorts</h3>
+            <p>Remove short-form distractions from the YouTube experience when you want a more intentional browsing session.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">P</span>
+            <h3>Rule presets</h3>
+            <p>Create focused setups for study, work, kids-safe browsing, no politics or your own custom keyword groups.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">L</span>
+            <h3>Local and private</h3>
+            <p>Your filtering rules live in your browser. The product is designed around simple local control, not cloud profiling.</p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">F</span>
+            <h3>Fast to start</h3>
+            <p>Install, add your first keyword or channel, open YouTube and immediately see a calmer feed.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo-band">
+        <div class="section-shell demo-inner">
+          <div class="demo-copy" data-reveal>
+            <p class="eyebrow">From noisy feed to useful feed</p>
+            <h2>Make YouTube match your intent.</h2>
+            <p>
+              Use YouTube for tutorials, research, music, learning or family viewing without
+              letting unrelated recommendations take over the page.
+            </p>
+          </div>
+          <div class="demo-card" data-reveal>
+            <video
+              src="https://github.com/leozheng0729/source/releases/download/extension/filter.mp4"
+              poster="./images/cover.png"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Filter YouTube Video product demo"></video>
+          </div>
+        </div>
+      </section>
+
+      <section id="steps" class="section-shell steps-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">How to use</p>
+          <h2>Four steps to a cleaner YouTube.</h2>
+          <p>
+            The extension is made for people who want control without complicated setup.
+            Install it once, then tune your rules whenever your feed gets noisy.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card" data-reveal>
+            <span>01</span>
+            <h3>Install from Chrome Web Store</h3>
+            <p>Click the install button and add Filter YouTube Video to Chrome in a few seconds.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span>02</span>
+            <h3>Add one keyword or channel</h3>
+            <p>Start with the topic or channel that appears too often in your YouTube feed.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span>03</span>
+            <h3>Choose what to hide</h3>
+            <p>Use keyword rules, channel rules, Shorts hiding and presets to shape the experience.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span>04</span>
+            <h3>Browse with less noise</h3>
+            <p>Open YouTube and keep learning, working or watching without constant unwanted pulls.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="use-cases section-shell">
+        <div class="use-case-copy" data-reveal>
+          <p class="eyebrow">Who it helps</p>
+          <h2>Useful for focus, family and better recommendations.</h2>
+        </div>
+        <div class="use-case-list">
+          <article data-reveal>
+            <h3>Students</h3>
+            <p>Keep tutorials and lectures visible while filtering entertainment topics during study sessions.</p>
+          </article>
+          <article data-reveal>
+            <h3>Parents</h3>
+            <p>Reduce unwanted channels and Shorts when children use YouTube with family supervision.</p>
+          </article>
+          <article data-reveal>
+            <h3>Professionals</h3>
+            <p>Turn YouTube into a research tool instead of a recommendation loop during work hours.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="feedback-section" aria-label="User feedback">
+        <div class="section-shell">
+          <div class="section-heading compact" data-reveal>
+            <p class="eyebrow">User feedback</p>
+            <h2>People use it to make YouTube feel intentional again.</h2>
+          </div>
+        </div>
+        <div class="feedback-marquee">
+          <div class="feedback-track">
+            <article>
+              <p>"I added one channel and two keywords. My YouTube homepage finally stopped pushing the same distracting topic every day."</p>
+              <strong>Daniel R.</strong>
+              <span>Designer</span>
+            </article>
+            <article>
+              <p>"The best part is that it feels simple. I do not need a huge productivity system, just a way to remove the videos I already know I do not want."</p>
+              <strong>Priya S.</strong>
+              <span>Graduate student</span>
+            </article>
+            <article>
+              <p>"I use YouTube for engineering tutorials. Blocking noisy channels makes search and recommendations much easier to scan."</p>
+              <strong>Marcus L.</strong>
+              <span>Frontend engineer</span>
+            </article>
+            <article>
+              <p>"Hiding Shorts changed how my kid uses YouTube. The page feels slower, calmer and much easier to manage."</p>
+              <strong>Emily C.</strong>
+              <span>Parent</span>
+            </article>
+            <article>
+              <p>"The local-rule approach matters to me. I want filtering without sending my watch habits into another dashboard."</p>
+              <strong>Owen M.</strong>
+              <span>Founder</span>
+            </article>
+            <article>
+              <p>"I added one channel and two keywords. My YouTube homepage finally stopped pushing the same distracting topic every day."</p>
+              <strong>Daniel R.</strong>
+              <span>Designer</span>
+            </article>
+            <article>
+              <p>"The best part is that it feels simple. I do not need a huge productivity system, just a way to remove the videos I already know I do not want."</p>
+              <strong>Priya S.</strong>
+              <span>Graduate student</span>
+            </article>
+            <article>
+              <p>"I use YouTube for engineering tutorials. Blocking noisy channels makes search and recommendations much easier to scan."</p>
+              <strong>Marcus L.</strong>
+              <span>Frontend engineer</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section-shell faq-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions people search before installing.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details open data-reveal>
+            <summary>Can I filter YouTube videos by keyword?</summary>
+            <p>Yes. Add title keywords or phrases and the extension filters matching YouTube videos from your feed and browsing pages.</p>
+          </details>
+          <details data-reveal>
+            <summary>Can I block YouTube channels?</summary>
+            <p>Yes. Add channel names to your rules to hide videos from channels you no longer want recommended.</p>
+          </details>
+          <details data-reveal>
+            <summary>Can it hide YouTube Shorts?</summary>
+            <p>Yes. You can enable Shorts hiding when you want YouTube to feel more focused and less addictive.</p>
+          </details>
+          <details data-reveal>
+            <summary>Is it private?</summary>
+            <p>The extension is designed around local browser rules. Your keywords and channel filters are stored locally.</p>
+          </details>
+          <details data-reveal>
+            <summary>Does it work for productivity and parental control?</summary>
+            <p>It can help with both. It is not a full parental-control system, but it is useful for reducing unwanted topics, channels and Shorts.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="final-cta section-shell" data-reveal>
+        <div>
+          <p class="eyebrow">Ready to clean your feed?</p>
+          <h2>Install Filter YouTube Video for Chrome.</h2>
+          <p>Start with one keyword or channel and see how much calmer YouTube can feel.</p>
+        </div>
+        <a
+          class="install-button"
+          href="https://chromewebstore.google.com/detail/filter-youtube-video/mgfegjcpcmgehngcdaiomljenckdnenc"
+          target="_blank"
+          rel="noopener noreferrer">
+          安装到Chrome
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="brand" href="#top">
+          <img src="./images/logo.png" alt="" />
+          <span>Filter YouTube Video</span>
+        </a>
+        <p>
+          Filter YouTube Video helps users block unwanted YouTube videos by keyword,
+          channel and Shorts visibility. YouTube is a trademark of Google LLC.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
