@@ -103,6 +103,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
   min-height: 54px;
   padding: 0 24px;
   border: 0;
@@ -112,6 +113,7 @@ a {
   color: #fff;
   font-size: 17px;
   font-weight: 850;
+  white-space: nowrap;
   transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
 }
 
@@ -666,6 +668,11 @@ h3 {
 .final-cta p:last-child {
   margin-bottom: 0;
   font-size: 17px;
+}
+
+.final-cta .install-button {
+  min-width: 176px;
+  padding-inline: 28px;
 }
 
 .site-footer {
