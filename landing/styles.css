@@ -103,6 +103,7 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   flex: 0 0 auto;
   min-height: 54px;
   padding: 0 24px;
@@ -117,6 +118,18 @@ a {
   transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
 }
 
+.install-button .chrome-icon {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+}
+
+.install-button .external-icon {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+}
+
 .install-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 22px 46px rgba(255, 45, 47, 0.3);
@@ -128,6 +141,16 @@ a {
   padding: 0 16px;
   border-radius: 10px;
   font-size: 14px;
+}
+
+.install-button-small .chrome-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.install-button-small .external-icon {
+  width: 14px;
+  height: 14px;
 }
 
 .hero {
