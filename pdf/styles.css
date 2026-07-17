@@ -131,6 +131,12 @@ a {
   height: 22px;
 }
 
+.install-button .external-icon {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+}
+
 .install-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 22px 46px rgba(217, 48, 37, 0.28);
@@ -147,6 +153,11 @@ a {
 .install-button-small .chrome-icon {
   width: 18px;
   height: 18px;
+}
+
+.install-button-small .external-icon {
+  width: 14px;
+  height: 14px;
 }
 
 .hero {
