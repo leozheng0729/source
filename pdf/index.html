@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local PDF Tools - Merge, Compress, Redact PDFs in Chrome</title>
+    <meta
+      name="description"
+      content="Local PDF Tools is a Chrome extension for merging, splitting, compressing, watermarking, redacting, batch-cleaning and securely exporting PDFs without uploading files." />
+    <meta
+      name="keywords"
+      content="local PDF tools, PDF merge Chrome extension, compress PDF locally, redact PDF, secure PDF export, batch PDF processing, clean PDF metadata, private PDF tool" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#d93025" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Local PDF Tools - Clean, redact and export PDFs locally" />
+    <meta
+      property="og:description"
+      content="Merge, split, compress, watermark, redact and batch-clean PDFs in your browser. Files stay on your device." />
+    <meta property="og:image" content="./images/cover.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Local PDF Tools" />
+    <meta
+      name="twitter:description"
+      content="A private Chrome PDF toolbox for local PDF cleanup, redaction and secure export packages." />
+    <meta name="twitter:image" content="./images/cover.png" />
+    <link rel="icon" href="./images/logo.png" />
+    <link rel="preload" as="image" href="./images/logo.png" />
+    <link rel="preload" as="image" href="./images/cover.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Local PDF Tools",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome, ChromeOS, Windows, macOS, Linux",
+        "description": "A Chrome extension that helps users merge, split, compress, watermark, redact, batch-clean and securely export PDFs locally in the browser.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        },
+        "featureList": [
+          "Merge PDFs locally",
+          "Split and extract PDF pages",
+          "Compress PDFs in the browser",
+          "Redact sensitive PDF information",
+          "Batch rename and clean PDF metadata",
+          "Export secure PDF ZIP packages"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are my PDFs uploaded to a server?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Local PDF Tools processes PDFs in your browser so private files stay on your device."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I black out sensitive information in a PDF?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Pro workflow includes manual redaction so you can black out sensitive areas before exporting."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it support batch PDF work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Pro supports folder import, batch compression, batch watermarking, batch renaming, metadata cleanup and secure ZIP export."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#top" aria-label="Local PDF Tools home">
+        <img src="./images/logo.png" alt="Local PDF Tools logo" />
+        <span>Local PDF Tools</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="install-button install-button-small" href="#install">
+        <img
+          class="chrome-icon"
+          src="./images/chrome-icon.svg"
+          alt=""
+          aria-hidden="true" />
+        <span>Add to Chrome</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Private PDF cleanup in Chrome</p>
+          <h1>Merge, compress and redact PDFs without uploading files.</h1>
+          <p class="hero-text">
+            Local PDF Tools helps you prepare documents before sending them:
+            combine files, split pages, reduce file size, add watermarks, black
+            out sensitive details and export a clean PDF package from your
+            browser.
+          </p>
+          <div class="hero-actions">
+            <a class="install-button" href="#install">
+              <img
+                class="chrome-icon"
+                src="./images/chrome-icon.svg"
+                alt=""
+                aria-hidden="true" />
+              <span>Add to Chrome</span>
+            </a>
+            <a class="secondary-link" href="#demo">Watch the demo</a>
+          </div>
+          <div class="trust-row" aria-label="Product highlights">
+            <span>Files stay local</span>
+            <span>Manual redaction</span>
+            <span>Batch secure export</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" data-reveal>
+          <div
+            class="product-frame"
+            aria-label="Local PDF Tools product preview">
+            <div class="browser-bar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <strong>local-pdf-tools</strong>
+            </div>
+            <video
+              src="https://github.com/leozheng0729/source/releases/download/extension/pdf.mp4"
+              poster="./images/cover.png"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Local PDF Tools product demo"></video>
+            <div class="floating-card floating-card-top">
+              <strong>Secure package</strong>
+              <span>ZIP + manifest</span>
+            </div>
+            <div class="floating-card floating-card-bottom">
+              <strong>Redacted</strong>
+              <span>Sensitive areas blacked out</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Common PDF tasks">
+        <span>Merge PDFs</span>
+        <span>Compress before email</span>
+        <span>Redact private details</span>
+        <span>Batch clean metadata</span>
+      </section>
+
+      <section id="features" class="section-shell feature-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">What problem it solves</p>
+          <h2>PDF cleanup that feels safe enough for real documents.</h2>
+          <p>
+            Online PDF sites are convenient, but not every contract, invoice,
+            resume or report should be uploaded somewhere else. This extension
+            keeps everyday PDF work inside your browser.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">M</span>
+            <h3>Merge and organize PDFs</h3>
+            <p>
+              Combine PDFs, split page ranges, extract selected pages and rotate
+              scans that came in sideways.
+            </p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">C</span>
+            <h3>Compress before sharing</h3>
+            <p>
+              Reduce PDF size before email, form upload or client delivery while
+              keeping the workflow local.
+            </p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">R</span>
+            <h3>Redact sensitive information</h3>
+            <p>
+              Open a page, draw black boxes over private details and export a
+              PDF with those areas permanently covered.
+            </p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">W</span>
+            <h3>Add watermarks</h3>
+            <p>
+              Mark drafts, confidential files or shared documents with a simple
+              text watermark before sending.
+            </p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">B</span>
+            <h3>Batch clean Pro workflow</h3>
+            <p>
+              Import folders, batch compress, batch watermark, batch rename and
+              clean metadata from multiple PDFs.
+            </p>
+          </article>
+          <article class="feature-card" data-reveal>
+            <span class="feature-icon">Z</span>
+            <h3>Secure export package</h3>
+            <p>
+              Export processed PDFs as one ZIP package with a manifest that
+              records what was cleaned and exported.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="demo" class="demo-band">
+        <div class="section-shell demo-inner">
+          <div class="demo-copy" data-reveal>
+            <p class="eyebrow">From messy PDF queue to ready-to-send files</p>
+            <h2>Prepare PDFs before they leave your device.</h2>
+            <p>
+              Use the same tab to preview pages, mark sensitive areas, choose
+              cleanup options and export files that are smaller, clearer and
+              safer to share.
+            </p>
+          </div>
+          <div class="demo-card" data-reveal>
+            <video
+              src="https://github.com/leozheng0729/source/releases/download/extension/pdf.mp4"
+              poster="./images/cover.png"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="Local PDF Tools workflow demo"></video>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section-shell steps-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">How it works</p>
+          <h2>Four steps from upload to clean export.</h2>
+          <p>
+            The workflow is designed for quick document preparation, not heavy
+            desktop publishing. Upload, choose the pages or actions, then
+            download.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card" data-reveal>
+            <span>01</span>
+            <h3>Upload PDFs</h3>
+            <p>
+              Add one file, multiple files or a Pro folder import. Non-PDF files
+              are ignored.
+            </p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span>02</span>
+            <h3>Preview pages</h3>
+            <p>
+              See page thumbnails, select pages, rotate scans or open a page to
+              redact sensitive areas.
+            </p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span>03</span>
+            <h3>Choose cleanup actions</h3>
+            <p>
+              Compress, watermark, rename, clean metadata or prepare a secure
+              Pro export package.
+            </p>
+          </article>
+          <article class="step-card" data-reveal>
+            <span>04</span>
+            <h3>Export safely</h3>
+            <p>
+              Download a processed PDF or one ZIP package with cleaned PDFs and
+              a processing manifest.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="result-band">
+        <div class="section-shell result-inner">
+          <div class="result-copy" data-reveal>
+            <p class="eyebrow">The result</p>
+            <h2>Cleaner, smaller, safer PDFs that are ready to send.</h2>
+          </div>
+          <div class="result-list" data-reveal>
+            <span>No random upload step</span>
+            <span>Private details blacked out</span>
+            <span>File names organized</span>
+            <span>Metadata cleaned</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section-shell faq-section">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions people ask before installing.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details data-reveal open>
+            <summary>Does this upload my PDFs?</summary>
+            <p>
+              No. PDF operations are handled locally in the browser. The
+              extension is built for documents you do not want to send to random
+              online PDF tools.
+            </p>
+          </details>
+          <details data-reveal>
+            <summary>What can I do for free?</summary>
+            <p>
+              Free users can handle common single-file PDF tasks such as split,
+              extract, rotate, watermark and compress.
+            </p>
+          </details>
+          <details data-reveal>
+            <summary>What does Pro unlock?</summary>
+            <p>
+              Pro unlocks batch processing, folder import, no file size limit,
+              no footer mark, batch rename, metadata cleanup, manual redaction
+              and one-click secure ZIP export.
+            </p>
+          </details>
+          <details data-reveal>
+            <summary>Can it redact scanned PDFs?</summary>
+            <p>
+              Manual redaction works on visible page areas, including scanned
+              pages, because you draw the black boxes yourself. OCR-based
+              automatic detection is not required.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section id="install" class="final-cta section-shell" data-reveal>
+        <p class="eyebrow">Chrome PDF extension</p>
+        <h2>Stop sending private PDFs through random online tools.</h2>
+        <p>
+          Use Local PDF Tools when you need to merge, compress, redact and
+          prepare files before sharing them with clients, coworkers, teachers or
+          platforms.
+        </p>
+        <a
+          class="install-button"
+          href="#"
+          aria-label="Add Local PDF Tools to Chrome">
+          <img
+            class="chrome-icon"
+            src="./images/chrome-icon.svg"
+            alt=""
+            aria-hidden="true" />
+          <span>Add to Chrome</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="section-shell">
+        <a class="brand" href="#top" aria-label="Local PDF Tools home">
+          <img src="./images/logo.png" alt="" />
+          <span>Local PDF Tools</span>
+        </a>
+        <p>Merge, compress, redact and batch-clean PDFs locally in Chrome.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
