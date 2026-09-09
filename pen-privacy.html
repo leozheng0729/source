@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Highlighter Pen 隐私政策</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #20232d; background: #f6f7fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { min-height: 100vh; padding: 48px 20px 72px; }
+    .shell { max-width: 860px; margin: 0 auto; }
+    header { display: flex; align-items: center; margin-bottom: 34px; }
+    .brand { font-size: 18px; font-weight: 750; }
+    header a { margin-left: auto; color: #5e49d8; font-size: 14px; font-weight: 650; }
+    article { background: #fff; border: 1px solid #e8e9f0; border-radius: 22px; padding: 44px 52px; box-shadow: 0 18px 50px rgba(38, 34, 77, .07); }
+    h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 44px); letter-spacing: -.04em; }
+    .effective { margin: 0 0 34px; color: #747887; font-size: 14px; }
+    .intro, section p { color: #555967; line-height: 1.8; }
+    .intro { margin-bottom: 34px; }
+    section { padding: 25px 0; border-top: 1px solid #ececf2; }
+    section h2 { margin: 0 0 12px; font-size: 19px; }
+    section p { margin: 8px 0 0; }
+    footer { color: #858896; font-size: 13px; text-align: center; margin-top: 24px; }
+    @media (max-width: 640px) { main { padding: 24px 14px 44px; } article { padding: 30px 24px; border-radius: 16px; } header { margin-bottom: 22px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="shell">
+      <header><span class="brand">Highlighter Pen</span><a href="https://github.com/leozheng0729/youtube">项目主页</a></header>
+      <article>
+        <h1>隐私政策</h1>
+        <p class="effective">生效日期：2026 年 9 月 9 日</p>
+        <p class="intro">感谢你使用 Highlighter Pen。本政策说明扩展如何处理信息。我们遵循数据最小化原则，只使用提供网页批注、导出和账户权益所需的信息。</p>
+        <section><h2>1. 我们收集什么信息</h2><p>Highlighter Pen 只处理提供功能所必需的信息。你在网页上创建的高亮、便签、文本框、画笔、箭头和自定义批注默认保存在浏览器本地。</p><p>当你登录或注册时，我们会收到你主动提交的邮箱地址，以及 Supabase 身份验证所需的账户标识。使用 Google 登录时，Google 会向我们提供其授权流程返回的基本账户信息。</p></section>
+        <section><h2>2. 本地标注和导出</h2><p>Pro 用户的页面标注会按页面地址保存在 chrome.storage.local，用于你再次打开同一页面时恢复内容。普通用户的标注不会上传到我们的服务器。</p><p>截图、3x PNG、PDF 和 Markdown 反馈清单均由浏览器扩展在本地生成。除非你主动分享导出的文件，否则我们不会读取这些文件的内容。</p></section>
+        <section><h2>3. 登录、支付和订阅状态</h2><p>为了识别 Pro 权益，登录后扩展会根据你的邮箱查询订单和产品记录。支付由 Stripe 处理，我们不会保存银行卡号或完整支付凭证。</p><p>扩展会在浏览器本地保存 Free / Pro 状态，以便内容脚本解锁对应功能。账户登录记录可能包含账户 ID、邮箱、扩展 ID、版本和登录时间，用于账户支持和服务维护。</p></section>
+        <section><h2>4. 权限用途</h2><p>activeTab 用于在当前页面显示工具栏并截取当前可见页面；downloads 用于保存你主动导出的文件；storage 用于保存设置、Pro 状态和本地标注；identity / Google OAuth 用于完成你主动发起的登录。</p><p>扩展不会出售个人信息，也不会使用页面内容进行广告画像。</p></section>
+        <section><h2>5. 数据保留和删除</h2><p>你可以在扩展工具栏点击清除来删除当前页面的标注，也可以在浏览器的扩展存储设置中删除本地数据。卸载扩展通常会一并移除本地存储。</p><p>你可以随时退出登录。若要请求删除账户相关记录，请通过项目主页提交 Issue。</p></section>
+        <section><h2>6. 第三方服务</h2><p>账户和订单查询使用 Supabase；支付页面使用 Stripe；Google 登录使用 Google OAuth。它们只会按照各自隐私政策处理完成对应服务所需的信息。</p></section>
+        <section><h2>7. 政策更新和联系我们</h2><p>如果功能或法律要求发生变化，我们会更新本页面并修改生效日期。继续使用扩展即表示你已阅读更新后的政策。</p><p>如有隐私问题、数据删除请求或安全报告，请通过项目主页提交 Issue。</p></section>
+      </article>
+      <footer>© 2026 Highlighter Pen</footer>
+    </div>
+  </main>
+</body>
+</html>
