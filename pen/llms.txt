@@ -1,0 +1,39 @@
+# Highlighter Pen
+
+> Chrome extension for annotating live webpages and exporting screenshot feedback.
+
+## Product facts
+- Free: up to 20 combined annotations per page; normal screenshots include a watermark.
+- Pro: 9.99 USD one-time; unlimited annotations, watermark-free screenshots, HD PNG, visible-area PDF, Markdown feedback, local history and custom source information.
+- Annotations are local to the browser, with no cross-device cloud sync. Website changes can affect restoration.
+- HD enlargement cannot create missing source details. PDF is the visible area, not a full scrolling-page capture.
+- Online sign-in and payment services are required for purchase and activation.
+
+## Start here
+- [Product overview](./index.html)
+- [Web research and reading notes](./research.html)
+- [Bug reports with annotated screenshots](./bug-reports.html)
+- [Website design review](./design-review.html)
+- [Highlighter Pen vs GoFullPage: sourced independent comparison](./compare-gofullpage.html)
+- [Free vs Pro and current price](./pricing.html)
+- [Questions and answers](./faq.html)
+- [Terms of Service](./terms.html)
+- [Refund Policy](./refund.html)
+- [Privacy Policy](./privacy.html)
+
+## Languages
+- [English](./index.html)
+- [Deutsch](./de/index.html)
+- [Nederlands](./nl/index.html)
+- [español](./es/index.html)
+- [français](./fr/index.html)
+- [italiano](./it/index.html)
+- [polski](./pl/index.html)
+- [русский](./ru/index.html)
+- [中文（中国）](./zh-CN/index.html)
+- [中文（台灣）](./zh-TW/index.html)
+- [日本語](./ja/index.html)
+- [한국어](./ko/index.html)
+
+Refund requests are individually reviewed, not automatically approved. Mandatory consumer rights remain. Contact: wp569359120@gmail.com
+Store: https://chromewebstore.google.com/detail/highlighter-pen-web-annot/phbjchelbmfkpbmkigndldlioeogodpj
