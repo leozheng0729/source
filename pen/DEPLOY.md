@@ -4,11 +4,11 @@ This directory is a complete static website. Upload its contents and preserve ev
 
 ## Public URL
 
-From apps/ext-pen, run with the actual public directory URL before publishing:
+The default public URL is https://pageink.app/, matching the extension's public policy links. Running pnpm run build:site updates canonical and hreflang links, the 109-URL sitemap.xml and the robots.txt sitemap reference. If the website moves, regenerate before publishing:
 
 `PEN_SITE_URL=https://YOURNAME.github.io/YOURREPO/ pnpm run build:site`
 
-Include the repository path for a project Pages site. This generates canonical URLs, matching-page hreflang links, absolute social image URLs and sitemap.xml. Without PEN_SITE_URL no fictitious canonical or sitemap is emitted.
+Include the repository path for a project Pages site. All links in the generated sitemap must match the actual deployed URL.
 
 ## GitHub Pages
 

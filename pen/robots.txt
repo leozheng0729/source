@@ -9,3 +9,5 @@ Allow: /
 
 User-agent: PerplexityBot
 Allow: /
+
+Sitemap: https://pageink.app/sitemap.xml
